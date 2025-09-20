@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>sode2html</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color:lightgrey;">
+<pre>
+ <.>
+ _.
+ _.
+ 
+
+<span class="comment">/********** main **********/</span>
+
+  ( ,  *[])
+{
+	FILE * , *; <span class="comment">// source and destination file descriptors 
+</span>	_ *;
+	 _[];
+
+	( < )
+	{
+		(\E !      \);
+		(U: <> < > \);
+		(E : ./a. .\\);
+		 ;
+	}
+ DEBUG
+	(F    : %\, []);
+
+
+	<span class="comment">/* opnen the file */</span>
+
+	(NULL == ( = ([], )))
+	{
+		(E! F %    \, []);
+		 ;
+	}
+	<span class="comment">/* Check for output file */</span>
+	 ( > )
+	{
+		(_, %., []);
+	}
+	
+	{
+		(_, %., []);
+	}
+	<span class="comment">/* open dest file */</span>
+	 (NULL == ( = (_, )))
+	{
+		(E!    %  \, _);
+		 ;
+	}
+
+	<span class="comment">/* write HTML starting Tags */</span>
+	_(, HTML_OPEN);
+
+	<span class="comment">/* Read from src file convert into html and write to dest file */</span>
+	
+	{
+		 = __();
+		<span class="comment">/* call sourc_to_html */</span>
+		__(, );
+<span class="comment">//		printf("In main : Event = %d\n", event);
+</span>	}  (-> != PEVENT_EOF);
+
+	<span class="comment">/* Call start_or_end_conv function for ending the convertation */</span>
+	_(, HTML_CLOSE);
+	
+	(\O  % \, _);
+<span class="comment">/* close file */</span>
+	();
+	();
+
+	 ;
+}
+</pre>
+</body>
+</html>
